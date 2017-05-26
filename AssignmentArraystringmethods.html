@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment array and methods</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+//==========Assignment-1: Concat method ========
+var concatres =""
+function concat() {  //function code
+  var concatstr = " ";
+  for (var i = 0; i < arguments.length; i++) {
+    concatres += arguments[i];
+  }
+  return concatres;
+  }
+console.log("Concatenated string is",concat("ravi","indy","b ","%")); //input passed as arguments to function
+//==============================================================================
+//=Assignment-2: endswith method.....The endsWith() method determines
+//=whether a string ends with the characters of a specified string.
+// function lookup(str,endStr,inputpos) {
+//   var strlength=0;
+//   if (arguments.length==3) {
+//       strlength=inputpos;
+//   } else {
+//       strlength=str.length;
+//   }
+//   var start = (strlength-endStr.length);
+//   var substr1 = str.substring(start,strlength);
+//   if (substr1===endStr) {
+//     return true;
+//   } else return false;
+// }
+// console.log(lookup("Hello world, welcome to the universe.","world",11));
+//==============================================================================
+//Assignment-3: includes....The includes() method determines whether a string contains the characters of a specified string.
+//
+// var exists ="false";
+// var tagLength = 0;
+// var position=0;
+// var i =0;
+// function IncludesSearch(string,tag,position) {
+//     var searchStart = 0;
+//   if (arguments.length == 3) {
+//     searchStart=position;
+//   }
+//     tagLength=tag.length
+//   for (i=searchStart ; i < string.length ; i++) {
+//     if (string.substring(i,i+tagLength) == tag) {
+//       exists = "true";
+//       break;
+//     }
+//     else {
+//       exists = "false";
+//     }
+//   }
+//   return exists;
+// }
+// console.log(IncludesSearch("Hello world, welcome to the universe.","world",7)); //test case 1..expected false
+// console.log(IncludesSearch("Hello world, welcome to the universe.","world",5)); //test case 2..expected true
+// console.log(IncludesSearch("Hello world, welcome to the universe.","world")); // test case 3..expected true
+// console.log(IncludesSearch("Hello world, welcome to the universe.","not there")); //test case 4..expected false
+// console.log(IncludesSearch("Hello world, welcome to the universe.","Hello")); // test case 5..expected true
+//==============================================================================
+//Assignment-4: indexof....The indexOf() method returns the position of the first occurrence of a specified value in a string.
+// var searchStart = 0;
+// var exists ="false";
+// function Indexof(string,tag,position) {
+//   if (arguments.length == 3) {
+//     searchStart=position;
+//   }
+//   var tagLength=tag.length
+//   for ( i=searchStart ; i < string.length ; i++) {
+//     if (string.substring(i,i+tagLength) == tag) {
+//       indexpos = i;
+//       break;
+//     }
+//     else {
+//       indexpos = -1
+//     }
+//   }
+//   return indexpos;
+// }
+// console.log(Indexof("Hello world, welcome to the universe.","e",5)); //test case-1 expected result is 14
+// console.log(Indexof("Hello world, welcome to the universe.","e",0)); //test case-2 expected result is 1
+// console.log(Indexof("Hello world, welcome to the universe.","world",0)); //test case-3 expected result is 6
+// console.log(Indexof("Hello world, welcome to the universe.","world",10)); //test case-4 expected result is -1
+// console.log(Indexof("Hello world, welcome to the universe.","Hello",0)); //test case-5 expected result is 0
+//==============================================================================
+//Assignment-5: push....The push() method adds new items to the end of an array
+// var fruits= ["Banana", "Orange", "Apple", "Mango"]; //input array
+// var array2 = ["Kiwi"]; //input array
+// var array3=["%%"] //input array
+// var array =[];
+// function ArrayPush ()  {
+//   var arrindx=0;
+//   var newarr =[];
+//   for (var i = 0; i < arguments.length; i++) {
+//     for (var j = 0; j < (arguments[i].length); j++) {
+//         newarr[arrindx]=arguments[i][j];
+//         arrindx++;
+//       }
+//   }
+//   return newarr;
+// }
+// console.log(ArrayPush(fruits, ["Kiwi"])); //test case 1- expected output ["Banana", "Orange", "Apple", "Mango", "Kiwi"]
+// console.log(ArrayPush(fruits, array2,array3)); //test case 2- expected output ["Banana", "Orange", "Apple", "Mango", "Kiwi","%%""]
+//==============================================================================
+//Assignment-6: Array concat method...The concat() method is used to join two or more arrays.
+    // var fruits= ["Banana", "Orange", "Apple", "Mango"]; //input array
+    // var array2 = ["Brian", "john"]; //input array
+    // var array3 = ["elizabeth"]; //input array
+    // function arrayConcat ()  {
+    //   var concatArray= [];
+    //   for (var i = 0; i < arguments.length; i++) {
+    //       for (var j=0; j< arguments[i].length;j++) {
+    //           concatArray.push(arguments[i][j]);
+    //       }
+    //   }
+    //   return concatArray;
+    // }
+    // console.log(arrayConcat (fruits,array2,array3)); //function call with array inputs
+//==============================================================================
+// //Assignment-7: Array join method...The join() method joins the elements of an array into a string, and returns the string.
+// var fruits= ["Banana", "Orange", "Apple", "Mango"];
+// function join ()  {
+//   var concatArray='';
+//   if (arguments.length!==2) {
+//     arguments[1] =",";
+//   }
+//   concatArray = arguments[0][0];
+//   for (var i=0; i<arguments[0] .length;i++) {
+//       for (var j = 1; j < arguments[0].length; j++) {
+//           concatArray = concatArray + " " + arguments[1]+" " + (arguments[i][j]);
+//       }
+//   return concatArray;
+//   }
+// }
+// console.log(join(fruits,"%")); //test case-1 expected result Banana % Orange % Apple % Mango
+// console.log(join(fruits,"and")); //test case-2 expected result Banana and Orange and Apple and Mango
+// console.log(join(fruits)); //test case-3 expected result Banana , Orange , Apple , Mango
+
+    </script>
+  </body>
+</html>
